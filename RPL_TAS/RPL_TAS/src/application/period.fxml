@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PeriodPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController">
+   <children>
+      <ImageView disable="true" fitHeight="628.0" fitWidth="1138.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../bgHome3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="79.0" layoutX="506.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="506.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@../../../logoEVOD.png" />
+         </image>
+      </ImageView>
+      <Line endX="814.0" layoutX="300.0" layoutY="100.0" startX="-300.0" stroke="#111111" strokeWidth="4.0" style="-fx-fill: #111111;" />
+      <Label layoutX="76.0" layoutY="222.0" prefHeight="93.0" prefWidth="463.0" style="-fx-text-fill: #111111;" text="EVOD - Period" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="222.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="146.0" style="-fx-text-fill: #111111;" text="Home     Period" textAlignment="JUSTIFY" textFill="#e8d9d9" AnchorPane.leftAnchor="79.0" AnchorPane.topAnchor="146.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCari" layoutX="509.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnCariPeriod" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #111111; -fx-background-radius: 30;" text="Cari" textFill="WHITE" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="317.0">
+         <font>
+            <Font name="Open Sans Bold Italic" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <TextField layoutX="73.0" layoutY="317.0" prefHeight="37.0" prefWidth="404.0" promptText="     Masukkan Period yang ingin Anda cari" styleClass="text-area" stylesheets="@kolomPencarian2.css">
+         <font>
+            <Font name="Open Sans" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnKembali" layoutX="922.0" layoutY="534.0" mnemonicParsing="false" onAction="#btnPeriodKembaliHome" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #111111; -fx-background-radius: 30;" text="Kembali" textFill="WHITE">
+         <font>
+            <Font name="Open Sans Bold Italic" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label layoutX="148.0" layoutY="148.0" text="&gt;&gt;" textAlignment="JUSTIFY" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
